@@ -1,4 +1,4 @@
-module.exports = generateReadme
+
 
 const generateReadme = readmeText => {
     //destructuring object
@@ -32,6 +32,8 @@ const generateReadme = readmeText => {
         ${tests}
         ## Questions
         ${github}
-        If you have additional questions please reach out at: + ${email};
+        If you have additional questions please reach out at: ${email}
     `}
 }
+
+module.exports.generateReadme = generateReadme;
