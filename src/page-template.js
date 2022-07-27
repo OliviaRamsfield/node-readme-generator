@@ -26,7 +26,7 @@ const generateReadme = readmeText => {
         ${usage}
         ## License
         ${license}
-        ${licenseBadge}
+        ![badge](https://img.shields.io/badge/license-${license}-brightgreen.svg)
         ## Contributing
         ${contributing}
         ## Tests

@@ -48,18 +48,6 @@ return inquirer.prompt( [
         name: "license",
         message: "What license does your project have?",
         choices: ["None", "MIT", "Apache License 2.0", "GNU General Public License v3.0"],
-        validate: licenseList => {
-            if (licenseList === "MIT") {
-                licenseBadge = ![GitHub]("https://img.shields.io/github/MIT/OliviaRamsfield/node-readme-generator?style=social")
-                return licenseBadge
-            } if (licenseList === "Apache License 2.0") {
-                licenseBadge = "![GitHub](https://img.shields.io/github/Apache2/OliviaRamsfield/node-readme-generator?style=social)"
-            } if (licenseList === "GNU General Public License v3.0") {
-                licenseBadge = "![GitHub](https://img.shields.io/github/GPL/OliviaRamsfield/node-readme-generator?style=social)"
-            } else (licenseList === "None")
-                return ""
-                console.log(licenseList)
-        }
     },
     {
         type: "input",
