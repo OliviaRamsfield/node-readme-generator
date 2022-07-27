@@ -44,10 +44,23 @@ return inquirer.prompt( [
         message: "Provide instructions and examples for use."
     },
     {
+        type: "confirm",
+        name: "confirmLicense",
+        message: "Did you use a license for this app?",
+        default: true
+    },
+    {
         type: "list",
         name: "license",
         message: "What license does your project have?",
-        choices: ["None", "MIT", "Apache License 2.0", "GNU General Public License v3.0"],
+        choices: ["MIT", "Apache", "GPL"],
+        when: ({ confirmLicense }) => {
+            if (confirmLicense) {
+                return true
+            } else {
+                return false
+            }
+        }
     },
     {
         type: "input",

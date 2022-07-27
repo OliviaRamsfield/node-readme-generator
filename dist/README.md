@@ -1,5 +1,5 @@
 
-        # Cow
+        # README Generator
 
         ## Table of Contents
         * [Description](#description)
@@ -11,19 +11,19 @@
         * [Questions](#questions)
         
         ## Description
-        moo
+        Creates readme based on user input
         ## Installation
-        none
+        1. node installed 2. inquirer
         ## Usage
-        install
+        You can use this application anytime you need to develop a readme for a project.
         ## License
         MIT
         ![badge](https://img.shields.io/badge/license-MIT-brightgreen.svg)
         ## Contributing
-        none
+        None
         ## Tests
-        go
+        No test available.
         ## Questions
-        [name](https://github.com/name)
-        If you have additional questions please reach out at: name
+        [OliviaRamsfield](https://github.com/OliviaRamsfield)
+        If you have additional questions please reach out at: email@email.com
     
