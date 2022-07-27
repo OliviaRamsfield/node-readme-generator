@@ -2,7 +2,7 @@
 
 const generateReadme = readmeText => {
     //destructuring object
-    const {projectTitle, description, installation, usage, license, contributing, tests, github, email } = readmeText
+    const {projectTitle, description, installation, usage, license, contributing, tests, github, email, licenseBadge } = readmeText
     if(!readmeText) {
         return ""
     } else {
@@ -26,12 +26,13 @@ const generateReadme = readmeText => {
         ${usage}
         ## License
         ${license}
+        ${licenseBadge}
         ## Contributing
         ${contributing}
         ## Tests
         ${tests}
         ## Questions
-        ${github}
+        [${github}](https://github.com/${github})
         If you have additional questions please reach out at: ${email}
     `}
 }
