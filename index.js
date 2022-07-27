@@ -17,7 +17,9 @@ return inquirer.prompt( [
                 console.log("Please enter a title for your project.")
                 return false;
             }
+        }
     },
+    {
     
         type: "input",
         name: "description",
@@ -81,7 +83,12 @@ return inquirer.prompt( [
 };
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) 
+// function writeToFile(fileName, data) {
+//     fs.writeFile(`./dist/${fileName}`, data, err => {
+//         if (err) {
+//             console.log(err)
+//         } console.log("Readme created!")
+// })
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
         fs.writeFile("./dist/README.md", fileContent, err => {
@@ -113,6 +120,9 @@ promptUser()
     })
     .then(pageMD => {
         return writeFile(pageMD)
+    })
+    .then(writeFileResponse => {
+        console.log(writeFileResponse)
     })
     .catch (err => {
         console.log(err)

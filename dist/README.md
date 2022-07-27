@@ -1,5 +1,5 @@
 
-        # undefined
+        # README generator
 
         ## Table of Contents
         * [Description](#description)
@@ -11,18 +11,18 @@
         * [Questions](#questions)
         
         ## Description
-        Name
+        It creates a README based on user input
         ## Installation
-        Project steps
+        1. npm install
         ## Usage
-        use it
+        Use this app to generate a professional README by following the prompts.
         ## License
         None
         ## Contributing
-        none
+        None
         ## Tests
-        aim
+        None
         ## Questions
-        olivia
-        If you have additional questions please reach out at: + none@gmail.com;
+        OliviaRamsfield
+        If you have additional questions please reach out at: example@gmail.com
     
